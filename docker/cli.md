@@ -1,4 +1,4 @@
-### 개발용 Compose 실행 (백그라운드 + 빌드)
+<img width="655" height="23" alt="image" src="https://github.com/user-attachments/assets/663ba31e-994c-4d1e-922a-c9f7f23898bf" />### 개발용 Compose 실행 (백그라운드 + 빌드)
 docker compose -f docker-compose.dev.yml up -d --build
 
 ### 컨테이너 목록 확인
@@ -27,3 +27,6 @@ docker rmi -f <이미지이름>
 
  ### 특정 이미지 빌드, 생성 시간 확인
  docker image inspect 이미지명 --format='{{.Created}}'
+
+### 웹 어플리케이션 스웨거 문서 추출
+docker exec ksox-ai-be-local python manage.py spectacular --file schema.json
