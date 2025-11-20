@@ -1,4 +1,4 @@
-<img width="655" height="23" alt="image" src="https://github.com/user-attachments/assets/663ba31e-994c-4d1e-922a-c9f7f23898bf" />### 개발용 Compose 실행 (백그라운드 + 빌드)
+### 개발용 Compose 실행 (백그라운드 + 빌드)
 docker compose -f docker-compose.dev.yml up -d --build
 
 ### 컨테이너 목록 확인
