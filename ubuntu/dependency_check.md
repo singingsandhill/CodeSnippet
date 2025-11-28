@@ -6,3 +6,6 @@ dpkg -l | grep -i -E 'sqlany|sql anywhere|sybase'
 
 #### 3. 특정 실행 파일 존재 여부 확인 (시스템 전체에서 dbsrv17, dbeng17, sqlany 관련 파일 검색 (에러는 무시))
 find / -type f -iname 'dbsrv17' -o -iname 'dbeng17' -o -iname 'sqlany' 2>/dev/null
+
+#### 4. 실행 중인 프로세스 확인 (프로세스 목록에서 dbsrv17, dbeng17, sqlany, monitor 관련 프로세스 검색)
+ps aux | grep -i -E 'dbsrv17|dbeng17|sqlany|monitor'
