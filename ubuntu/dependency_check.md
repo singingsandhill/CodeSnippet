@@ -9,3 +9,8 @@ find / -type f -iname 'dbsrv17' -o -iname 'dbeng17' -o -iname 'sqlany' 2>/dev/nu
 
 #### 4. 실행 중인 프로세스 확인 (프로세스 목록에서 dbsrv17, dbeng17, sqlany, monitor 관련 프로세스 검색)
 ps aux | grep -i -E 'dbsrv17|dbeng17|sqlany|monitor'
+
+#### 5. systemd 서비스 확인 (systemctl 서비스 목록에서 sqlany 관련 서비스 검색)
+```
+systemctl list-units --type=service | grep -i 'sqlany'
+```
