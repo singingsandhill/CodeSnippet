@@ -14,3 +14,8 @@ ps aux | grep -i -E 'dbsrv17|dbeng17|sqlany|monitor'
 ```
 systemctl list-units --type=service | grep -i 'sqlany'
 ```
+
+#### 6. 네트워크 포트 상태 확인 (현재 열려 있는 TCP/UDP 포트 및 프로세스 확인)
+```
+ss -tulpen
+```
