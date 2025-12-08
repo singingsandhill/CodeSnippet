@@ -25,3 +25,9 @@ systemctl list-units --type=service | grep -i 'sqlany'
 ```
 ss -tulpen
 ```
+
+#### 7. Docker 컨테이너 내부 프로세스 확인 (컨테이너 내부에서 dbsrv17, dbeng17, sqlany, monitor 관련 프로세스 검색)
+※ 일부 컨테이너는 sh가 없어서 실행 실패할 수 있음.
+````
+docker exec <container_name> sh -c 'ps aux | grep -i -E "dbsrv17|dbeng17|sqlany|monitor"'
+````
