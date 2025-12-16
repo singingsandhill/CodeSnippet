@@ -6,3 +6,7 @@ docker logs --since "2025-11-20T09:35:00" --until "2025-11-20T09:40:00" ksox-ai-
 ```
  docker logs tod-ai-be 2>&1 | grep "CID:b6a306d5"
 ```
+### Redis Docker 이미지 Session 조화
+```
+docker exec tod-redis redis-cli GET ":1:django.contrib.sessions.cacheegn1o1p6pt2mj1irwytnwsi8bunbwtgp"
+```
