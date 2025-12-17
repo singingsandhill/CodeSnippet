@@ -2,11 +2,15 @@
 ```
 docker logs --since "2025-11-20T09:35:00" --until "2025-11-20T09:40:00" ksox-ai-be 2>&1 | grep -iE '\b(err(or)?|warn(ing)?)\b'
 ```
-### 문자열 검색
+### 특정 문자열을 포함한 로그 검색
 ```
  docker logs tod-ai-be 2>&1 | grep "CID:b6a306d5"
 ```
-### Redis Docker 이미지 Session 조화
+### Redis Docker 이미지 Session 조회
 ```
 docker exec tod-redis redis-cli GET ":1:django.contrib.sessions.cacheegn1o1p6pt2mj1irwytnwsi8bunbwtgp"
+```
+### Redis Docker 이미지 키 검색
+```
+docker exec tod-redis redis-cli KEYS ":1:django.contrib.sessions.cache*"
 ```
