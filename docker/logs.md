@@ -10,6 +10,8 @@ docker logs --since "2025-11-20T09:35:00" --until "2025-11-20T09:40:00" ksox-ai-
 ```
 docker logs tod-ai-be 2>&1 | grep -a "8ac9c551" | head -n 50
 ```
+-a : 바이너리도 포함 검색
+
 ### Redis Docker 이미지 Session 조회
 ```
 docker exec tod-redis redis-cli GET ":1:django.contrib.sessions.cacheegn1o1p6pt2mj1irwytnwsi8bunbwtgp"
