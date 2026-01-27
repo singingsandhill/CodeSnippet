@@ -1,4 +1,3 @@
-
 ### 이미지 삭제 (강제 삭제 포함)
 ```
 docker rmi -f <이미지이름>
@@ -17,4 +16,9 @@ docker image inspect 이미지명 --format='{{.Created}}'
 ### 웹 어플리케이션 스웨거 문서 추출
 ```
 docker exec ksox-ai-be-local python manage.py spectacular --file schema.json
+```
+
+### 상태 확인
+```
+docker ps --filter "name=ksox" --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"
 ```
