@@ -10,3 +10,7 @@ docker exec ksox-ai-be-local python manage.py spectacular --format openapi-json 
 ```
 docker exec -it ksox-ai-be printenv DB_ENGINE
 ```
+### test 코드 실행
+```
+ docker exec ksox-ai-be-local python manage.py test --verbosity=2
+```
