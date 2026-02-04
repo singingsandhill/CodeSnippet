@@ -14,3 +14,7 @@ docker exec -it ksox-ai-be printenv DB_ENGINE
 ```
  docker exec ksox-ai-be-local python manage.py test --verbosity=2
 ```
+### 문법 검사
+```
+docker exec -it ksox-ai-be-local python -m compileall -q .
+```
