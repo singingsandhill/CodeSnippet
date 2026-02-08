@@ -6,6 +6,10 @@ docker compose -f docker-compose.dev.yml up -d --build
 ```
 docker ps 
 ```
+### 컨테이너 상세(포트/볼륨/Env/네트워크)
+```
+docker inspect tod-ai-be
+```
 ### 컨테이너 재시작
 ```
 docker restart tod-ai-be   
