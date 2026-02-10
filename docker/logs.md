@@ -20,3 +20,7 @@ docker exec tod-redis redis-cli GET ":1:django.contrib.sessions.cacheegn1o1p6pt2
 ```
 docker exec tod-redis redis-cli KEYS ":1:django.contrib.sessions.cache*"
 ```
+### 리소스 확인
+```
+docker stats
+```
