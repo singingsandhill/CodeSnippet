@@ -18,4 +18,5 @@ docker exec ksox-ai-be-local env | sort
 ### 문법 검사
 ```
 docker exec -it ksox-ai-be-local python -m compileall -q .
+docker exec -it ksox-ai-be-local python manage.py check
 ```
