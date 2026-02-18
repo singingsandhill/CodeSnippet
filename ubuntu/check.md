@@ -10,6 +10,11 @@ timeout 5 bash -c '</dev/tcp/DB URL/포트 번호' && echo "연결 성공" || ec
 hostname -I
 ```
 
+### 네트워크 확인
+```
+ip a                                   # 네트워크 인터페이스/주소 상세 확인
+```
+
 ### 서비스/로그(systemd)
 ```
 sudo systemctl status <service>        # 서비스 현재 상태 확인(실행 중/중지, 최근 로그 일부, PID, 활성화 여부)
