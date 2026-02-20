@@ -21,3 +21,8 @@ sudo systemctl status <service>        # 서비스 현재 상태 확인(실행 �
 
 sudo systemctl enable <service>        # 부팅 시 자동 시작 설정(즉시 시작은 아님)
 ```
+
+### 로그
+```
+sudo journalctl -u <service> -n 200 --no-pager  # 해당 서비스 로그 최근 200줄 출력(페이지 없이)
+```
