@@ -18,6 +18,7 @@ nginx -T
 ```bash
 # nginx 상태 확인
 systemctl status nginx
+systemctl status nginx -l ## 생략없이 전체 출력
 
 # nginx 시작
 systemctl start nginx
@@ -74,4 +75,6 @@ nginx -t -c /etc/nginx/nginx.conf
 **권장사항:** 설정 변경 후에는 항상 `nginx -t`로 문법 검사를 먼저 하고, `reload`를 사용하는 것이 안전합니다.
 
 ### 실패 로그 확인 명령어
+```
 tail -f /var/log/nginx/error.log
+```
