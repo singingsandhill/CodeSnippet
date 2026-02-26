@@ -20,3 +20,14 @@ docker exec ksox-ai-be-local env | sort
 docker exec -it ksox-ai-be-local python -m compileall -q .
 docker exec -it ksox-ai-be-local python manage.py check
 ```
+
+### ORM 조회
+```
+  docker exec ksox-ai-be-local python manage.py shell -c "                                   
+  from control.models import Term                                                            
+  terms = Term.objects.filter(term_code='2026T3', is_deleted=False)                          
+  print(f'Term 개수: {terms.count()}')                                                       
+  for t in terms:                                                                            
+      print(f'  id={t.id}, ET={t.engagement_team_id}')                                       
+  "
+```
