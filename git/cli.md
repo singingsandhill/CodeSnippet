@@ -11,3 +11,8 @@ git add .gitignore
 git commit -m "Stop tracking ignored files"
 git push
 ```
+
+### 로컬 변경사항 전부 삭제
+```
+git reset --hard
+```
