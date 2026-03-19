@@ -12,3 +12,8 @@ kubectl logs -n toc toc-ai-be-deployment-74ff9cb56c-mv96k
 ```
 kubectl get configmap -n toc
 ```
+
+#### 설정 수정
+```
+kubectl edit configmap toc-ai-be-configmap -n toc
+```
