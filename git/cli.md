@@ -16,3 +16,8 @@ git push
 ```
 git reset --hard
 ```
+
+### 이름이 다른 원격 브랜치에 강제 push
+```
+git push origin HEAD:Temp --force
+```
