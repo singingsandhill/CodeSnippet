@@ -9,3 +9,8 @@ kubectl set image deployment/toc-ai-fe-deployment \
 ```
 kubectl edit secret toc-ai-be-secret -n toc
 ```
+
+### 수정 후 재배포
+```
+kubectl rollout restart deployment dev-toc-fe-deployment -n dev-toc
+```
