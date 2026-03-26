@@ -8,12 +8,17 @@ kubectl get pods -o wide -n toc
 kubectl logs -n toc toc-ai-be-deployment-74ff9cb56c-mv96k
 ```
 
-### ConfigMap 조회
+### 환경변수 관련
+#### ConfigMap 조회
 ```
 kubectl get configmap -n toc
 ```
+#### secret 조회
+```
+kubectl get secret -n toc
+```
 
-#### 설정 수정
+### 설정 수정
 ```
 kubectl edit configmap toc-ai-be-configmap -n toc
 ```
