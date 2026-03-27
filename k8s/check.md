@@ -7,7 +7,9 @@ kubectl get pods -o wide -n toc
 ```
 kubectl logs -n toc toc-ai-be-deployment-74ff9cb56c-mv96k
 ```
-
+```
+kubectl describe pod -n toc toc-ai-fe-deployment-675465976b-b5q89
+```
 ### 환경변수 관련
 #### ConfigMap 조회
 ```
