@@ -1,4 +1,4 @@
-<img width="518" height="19" alt="image" src="https://github.com/user-attachments/assets/8e03e250-87aa-4708-b903-4708b0f6bf05" />### 특정값 존재 여부 확인
+### 특정값 존재 여부 확인
 ```
  docker exec tod-redis redis-cli EXISTS ":1:django.contrib.sessions.cacheegn1o1p6pt2mj1irwytnwsi8bunbwtgp"
 ```
