@@ -14,3 +14,8 @@ kubectl edit secret toc-ai-be-secret -n toc
 ```
 kubectl rollout restart deployment dev-toc-fe-deployment -n dev-toc
 ```
+
+### 이벤트 확인
+```
+kubectl get events -n toc --sort-by=.metadata.creationTimestamp
+```
