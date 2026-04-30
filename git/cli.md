@@ -21,3 +21,8 @@ git reset --hard
 ```
 git push origin HEAD:Temp --force
 ```
+
+### 브랜치 삭제
+```
+git branch -D temp
+```
