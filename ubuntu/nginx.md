@@ -77,4 +77,9 @@ nginx -t -c /etc/nginx/nginx.conf
 ### 실패 로그 확인 명령어
 ```
 tail -f /var/log/nginx/error.log
+zgrep "2026/05/07 ${UTC_HM}" /var/log/nginx/error.log*
+```
+### 400,500 에러만 핉터링
+```
+zgrep "${UTC_DATE}:${UTC_HM}" /var/log/nginx/access.log* | awk '$9 ~ /^[45]/ {print}'
 ```
